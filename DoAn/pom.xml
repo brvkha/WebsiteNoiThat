@@ -87,6 +87,11 @@
         <artifactId>maven-war-plugin</artifactId>
         <version>3.2.3</version>
       </plugin>
+      <plugin>
+            <groupId>org.apache.tomcat.maven</groupId>
+            <artifactId>tomcat10-maven-plugin</artifactId>
+            <version>5.1.0</version> <!-- Sử dụng phiên bản tương ứng -->
+        </plugin>
     </plugins>
   </build>
 </project>
