@@ -72,16 +72,12 @@
     <plugins>
        <plugin>
             <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-site-plugin</artifactId>
-            <version>3.9.1</version><!-- Sử dụng phiên bản mới nhất -->
-            <dependencies>
-                <dependency>
-                    <groupId>org.apache.maven.shared</groupId>
-                    <artifactId>maven-invoker</artifactId>
-                    <version>3.0.1</version><!-- Sử dụng phiên bản tương ứng -->
-                </dependency>
-                <!-- Các dependency khác nếu cần -->
-            </dependencies>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version><!-- Sử dụng phiên bản mới nhất -->
+            <configuration>
+                <source>1.8</source><!-- Sử dụng phiên bản ngôn ngữ Java 8 hoặc cao hơn -->
+                <target>1.8</target><!-- Đặt target tương ứng -->
+            </configuration>
         </plugin>
       <plugin>
         <artifactId>maven-war-plugin</artifactId>
